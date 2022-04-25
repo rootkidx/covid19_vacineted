@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #cde4e9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.covidapp.RegisterController">
+   <left>
+      <ImageView fitHeight="350.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@registPic.jpg" />
+         </image>
+      </ImageView>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="passwordRegisterField" layoutX="138.0" layoutY="192.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #A1D0BE; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="usernameRegisterField" layoutX="138.0" layoutY="151.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #A1D0BE; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="firstnameRegisterField" layoutX="138.0" layoutY="238.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #A1D0BE; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="lastnameRegisterField" layoutX="138.0" layoutY="281.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #A1D0BE; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text fill="#6b6b6b" layoutX="127.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" wrappingWidth="94.5497055053711">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#3e3e3e" layoutX="63.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username : " />
+            <Text fill="#3e3e3e" layoutX="63.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : " />
+            <Text fill="#3e3e3e" layoutX="63.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name : " />
+            <Text fill="#3e3e3e" layoutX="63.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name : " />
+            <Button fx:id="registerInRegisterButton" layoutX="61.0" layoutY="361.0" mnemonicParsing="false" onAction="#registerInRegisterButtonOnAction" prefHeight="30.0" prefWidth="225.0" style="-fx-background-color: #A1D0BE;" text="Register" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="loginInRegisterButton" layoutX="147.0" layoutY="407.0" mnemonicParsing="false" onAction="#loginInRegisterButtonOnAction" style="-fx-background-color: transparent; -fx-text-fill: #1451fa;" text="Login" textFill="#4400ff" underline="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="registerTextAlert" layoutX="36.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="276.82025146484375" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

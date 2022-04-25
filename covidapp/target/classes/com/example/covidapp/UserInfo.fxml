@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.covidapp.UserInfoController">
+   <top>
+      <AnchorPane prefHeight="53.0" prefWidth="700.0" style="-fx-background-color: #A1D0BE;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR INFORMATION" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="goBack_info" layoutX="630.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: orange;" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="446.0" prefWidth="556.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="dose1Text" fill="#333333" layoutX="166.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st Dose :" wrappingWidth="240.3830966949463" />
+            <Text fx:id="dose2Text" fill="#333333" layoutX="166.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2nd Dose :" wrappingWidth="230.7829990386963" />
+            <Text fx:id="dose3Text" fill="#333333" layoutX="166.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd Dose :" wrappingWidth="245.9830722808838" />
+            <Text fx:id="dose4Text" fill="#333333" layoutX="166.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4th Dose :" wrappingWidth="178.1830234527588" />
+            <Text fill="#333333" layoutX="134.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFILE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="nameText" fill="#333333" layoutX="166.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="217.159423828125" />
+            <Text fx:id="provinceText" fill="#333333" layoutX="166.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Province :" wrappingWidth="184.29014205932617" />
+            <Text fx:id="usernameText" fill="#333333" layoutX="166.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" wrappingWidth="255.16009140014648" />
+            <Button fx:id="editUserInfo" layoutX="198.0" layoutY="389.0" mnemonicParsing="false" onAction="#editUserInfoOnAction" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: #3CB371;" text="Edit" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Text fill="#333333" layoutX="134.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VACCINE RECORD">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="hideButton" layoutX="225.0" layoutY="389.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: #87ceeb;" text="Hide" textFill="WHITE" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="700.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="298.0" fitWidth="293.0" layoutX="37.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@data2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
