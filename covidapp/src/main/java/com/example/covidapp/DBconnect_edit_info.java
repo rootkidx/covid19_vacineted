@@ -230,34 +230,7 @@ public class DBconnect_edit_info {
         }
 
     }
-//    public int getID() throws SQLException{
-//        Connection conn = DriverManager.getConnection(DATABASE_URL, "root", "safireen456");
-//        int return_id = -1;
-//        String username = getUsername();
-//        System.out.println(username);
-//        try
-//        {
-//            String query = "SELECT * FROM account_login WHERE Username = '"+username+"'";
-//
-//
-//
-//            Statement st = conn.createStatement();
-//            ResultSet rs = st.executeQuery(query);
-//
-//            // iterate through the java resultset
-//            while (rs.next())
-//            {
-//                return_id = rs.getInt("id");
-//            }
-//            st.close();
-//        }
-//        catch (Exception e)
-//        {
-//            System.err.println("Got an exception! ");
-//            System.err.println(e.getMessage());
-//        }
-//        return return_id;
-//    }
+
     public String getDose1() throws SQLException{
         Connection conn = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
         String return_dose1 ="";

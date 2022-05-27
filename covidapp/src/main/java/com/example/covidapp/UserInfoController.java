@@ -25,8 +25,7 @@ public class UserInfoController implements Initializable {
     @FXML public  Text usernameText;
     @FXML public  Text nameText;
     @FXML public  Text provinceText;
-    @FXML public Button showButton;
-    @FXML public Button hideButton;
+
 
 
     public void backButtonOnAction(ActionEvent event) throws Exception{

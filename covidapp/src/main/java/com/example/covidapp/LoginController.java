@@ -104,30 +104,7 @@ public class LoginController {
 
 
     }
-//    public void saveUser() throws SQLException{
-//        String databaseName ="covid";
-//        String DATABASE_USERNAME ="root";
-//        String DATABASE_PASSWORD = "safireen456";
-//        String DATABASE_URL = "jdbc:mysql://localhost/"+databaseName;
-//        String SAVE_USER = "UPDATE save SET save_user = ? WHERE id = 1;";
-//
-//        try (Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USERNAME, DATABASE_PASSWORD);
-//
-//             // Step 2:Create a statement using connection object
-//             PreparedStatement preparedStatement = connection.prepareStatement(SAVE_USER)) {
-//            preparedStatement.setString(1, usernameField.getText());
-//
-//
-//            System.out.println(preparedStatement);
-//            // Step 3: Execute the query or update query
-//            preparedStatement.executeUpdate();
-//
-//
-//        } catch (SQLException e) {
-//            // print SQL exception information
-//            e.printStackTrace();
-//        }
-//    }
+
     }
 
 

@@ -90,6 +90,7 @@ public class RegisterController {
                 registerTextAlert.setText("Register Successful !");
             }catch (Exception e){
                 e.printStackTrace();
+
             }
 
         }

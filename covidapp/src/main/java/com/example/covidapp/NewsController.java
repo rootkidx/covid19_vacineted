@@ -1,7 +1,7 @@
 package com.example.covidapp;
-        ;
+        
 
-        import java.sql.SQLException;
+import java.sql.SQLException;
         import java.util.Objects;
         import java.util.ResourceBundle;
 
